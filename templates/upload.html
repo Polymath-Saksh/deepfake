@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,17 @@
         function uploadImage() {
             const input = document.getElementById('image-input');
             const file = input.files[0];
+
+            if (!file) {
+                document.getElementById('result').innerText = 'Please select a file.';
+                return;
+            }
+
+            if (!file.type.startsWith('image/')) {
+                document.getElementById('result').innerText = 'Please select a valid image file.';
+                return;
+            }
+
             const reader = new FileReader();
             reader.onloadend = function() {
                 const imageData = reader.result.split(',')[1];
@@ -27,11 +39,17 @@
                     },
                     body: JSON.stringify({image: imageData}),
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     document.getElementById('result').innerText = 'Prediction: ' + data.result;
                 })
                 .catch(error => {
+                    document.getElementById('result').innerText = 'Error: ' + error.message;
                     console.error('Error:', error);
                 });
             };

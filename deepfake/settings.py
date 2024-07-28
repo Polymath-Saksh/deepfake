@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-$7fay!%jbb7r%-_gk6l0ce*u&5r+469od@%s&(ji#m$$#o37p="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['deepfake-test-v2.azurewebsites.net','localhost']
+ALLOWED_HOSTS = ['deepfake-test-v3.azurewebsites.net']
 
 # Application definition
 
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "myapp"
 ]
 
 MIDDLEWARE = [

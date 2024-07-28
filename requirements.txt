@@ -3,5 +3,5 @@ transformers
 torch
 torchvision
 numpy
-whitenoise
 gunicorn
+whitenoise
