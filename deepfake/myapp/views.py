@@ -9,7 +9,7 @@ import base64
 import io
 
 # Initialize the model and image processor
-model_path = "dima806/deepfake_vs_real_image_detection"  # Directory containing the model files
+model_path = "sakshamkr1/deepfake_vit"  # Directory containing the model files
 model = AutoModelForImageClassification.from_pretrained(model_path, use_safetensors=True)
 image_processor = AutoImageProcessor.from_pretrained(model_path)
 
