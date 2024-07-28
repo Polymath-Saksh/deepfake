@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-$7fay!%jbb7r%-_gk6l0ce*u&5r+469od@%s&(ji#m$$#o37p="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['deepfake-test-v2.azurewebsites.net']
+ALLOWED_HOSTS = ['deepfake-test-v2.azurewebsites.net','localhost']
 
 # Application definition
 
