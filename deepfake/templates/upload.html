@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+    <h1>Upload Image for Prediction</h1>
+    <form method="post" enctype="multipart/form-data" id="upload-form">
+        {% csrf_token %}
+        <input type="file" id="image-input" accept="image/*">
+        <button type="button" onclick="uploadImage()">Upload</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function uploadImage() {
+            const input = document.getElementById('image-input');
+            const file = input.files[0];
+            const reader = new FileReader();
+            reader.onloadend = function() {
+                const imageData = reader.result.split(',')[1];
+                fetch('/predict/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+                    },
+                    body: JSON.stringify({image: imageData}),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = 'Prediction: ' + data.result;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
