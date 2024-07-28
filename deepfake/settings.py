@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-$7fay!%jbb7r%-_gk6l0ce*u&5r+469od@%s&(ji#m$$#o37p=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['deepfake-test-v1.azurewebsites.net/']
-
+ALLOWED_HOSTS = ['deepfake-test-v2.azurewebsites.net']
 
 # Application definition
 
@@ -123,4 +122,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATIC_ROOT  = BASE_DIR / "staticfiles"
+STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
