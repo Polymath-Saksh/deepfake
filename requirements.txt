@@ -1,0 +1,5 @@
+django-admin
+transformers
+torch
+torchvision
+numpy
