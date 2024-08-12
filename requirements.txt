@@ -1,7 +1,5 @@
 Django
 transformers
 torch
-torchvision
-numpy
 gunicorn
 whitenoise

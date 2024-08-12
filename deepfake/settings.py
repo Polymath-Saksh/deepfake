@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-$7fay!%jbb7r%-_gk6l0ce*u&5r+469od@%s&(ji#m$$#o37p="
+SECRET_KEY = "32423grgt4234"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['deepfake-test-v3.azurewebsites.net']
+ALLOWED_HOSTS = ['']
 
 # Application definition
 
@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "myapp"
+    "myapp",
+    "django.contrib.staticfiles"
 ]
 
 MIDDLEWARE = [
@@ -122,5 +123,3 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')

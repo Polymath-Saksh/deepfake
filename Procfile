@@ -1,1 +1,0 @@
-web: gunicorn deepfake.wsgi
