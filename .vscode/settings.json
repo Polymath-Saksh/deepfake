@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/2872b5fa-0770-4c2b-9b70-0c0d77955c32/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/deepfake-test-v1",
-    "appService.deploySubpath": "."
-}
