@@ -1,0 +1,161 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire background without being zoomed in */
+    z-index: -1;
+    opacity: 0.8;
+    filter: brightness(0.5) blur(2px);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://media.licdn.com/dms/image/D4D12AQFbZfiSO7Hzfg/article-cover_image-shrink_720_1280/0/1697613632807?e=2147483647&v=beta&t=PLbXeqawdRpK2Rzc1LZeg6hJdjcJ9SNXeRPI7eJuZv0');
+    
+    background-size: cover;
+    background-position: center;
+    
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #183157d2;
+    position: relative;
+    
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.396); /* Semi-transparent overlay */
+    z-index: -1;
+}
+body::after {
+    
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.46); /* Second overlay */
+    z-index: -1;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.heading {
+    font-size: 3em;
+    
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+    background-color: #f2eaeaa6;
+    background-size:600px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    
+}
+
+.para {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #15234a;
+    background-color: rgba(240, 248, 255, 0.67);
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.choose {
+    margin-top: 20px;
+}
+
+.choose .f {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff90;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    font-size: 1em;
+    width: 90%;
+   
+    
+    
+}
+
+.choose button {
+    background-color: #d7dee3aa;
+    color: #172d42;
+    padding: 10px 20px;
+    border: none;
+
+    border-radius: 4px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choose button:hover {
+    background-color: #edf0f3;
+}
+p{
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #15234a;
+    background-color: rgba(240, 248, 255, 0.67);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
