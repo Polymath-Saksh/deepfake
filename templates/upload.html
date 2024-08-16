@@ -4,14 +4,18 @@
 <head>
     <title>Upload Image</title>
 </head>
-<body>
-    <h1>Upload Image for Prediction</h1>
-    <form method="post" enctype="multipart/form-data" id="upload-form">
+<body class="b">
+    
+    <h1 class="heading"> DeepFake Detector</h1>
+    <p class="para"> This tool detects whether the image is real or fake.</p>
+    <form  class="choose" method="post" enctype="multipart/form-data" id="upload-form">
         {% csrf_token %}
-        <input type="file" id="image-input" accept="image/*">
+        <input class="f" type="file" id="image-input" accept="image/*">
         <button type="button" onclick="uploadImage()">Upload</button>
     </form>
+    
     <p id="result"></p>
+    <link rel="stylesheet" href="abc.css">
 
     <script>
         function uploadImage() {
