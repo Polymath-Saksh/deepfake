@@ -28,6 +28,10 @@ This repository contains the AI Ambassadors Project of Microsoft Learn Student A
 - The Web Application retrieves the image from the user via a user-friendly interface. During deployment, the model is retrieved from the Hugging Face Model Hub via the API, hence the user does not need to download the model in the concerned project directory.
 - The Web Application can be further deployed on Azure App Services for public use.
 
+## App Demo
+
+https://github.com/user-attachments/assets/d0e1601f-dccd-42a8-9f63-18964702114f
+
 ## Installation and Usage
 
 - Clone the repository using the following command:
