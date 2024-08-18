@@ -6,9 +6,9 @@ This repository contains the AI Ambassadors Project of Microsoft Learn Student A
 
 ### Development of a DeepFake Image Detection Model
 
-- Inspired by "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" by Dosovitskiy et al. (2020) The concerned Vision Transformer model is used for transfer learning on the DeepFake Detection Dataset.
+- Inspired by "[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)" by Dosovitskiy et al. (2020) The concerned Vision Transformer model is used for transfer learning on the DeepFake Detection Dataset.
 
-- A subset of Open Forensics Dataset consisting of approx. 1.9 million images is used for training the model. The dataset is divided into 3 sets: Training, Validation, and Testing Sets with a 14:4:1 ratio. Thereby, making the use of Transfer Learning for training the model to work on detecting DeepFake Images.
+- A subset of Open Forensics Dataset ([Deepfake Dataset](https://www.kaggle.com/datasets/manjilkarki/deepfake-and-real-images/data)) consisting of approx. 1.9 million images is used for training the model. The dataset is divided into 3 sets: Training, Validation, and Testing Sets with a 14:4:1 ratio. Thereby, making the use of Transfer Learning for training the model to work on detecting DeepFake Images.
 
 - The model trained is then deployed onto Hugging Face Model Hub for public use. The model is available for use at: [DeepFake Image Detection Model](https://huggingface.co/sakshamkr1/deepfake_vit)
 
@@ -56,6 +56,8 @@ This repository contains the AI Ambassadors Project of Microsoft Learn Student A
 ## Acknowledgements
 
 - [Dmytro Lakubovskyi](https://www.kaggle.com/dima806)'s Kaggle for ideas on the Vision Transformer Model and Deepfake Model Development.
+
+- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) by Dosovitskiy et al. (2020) for the Vision Transformer Model.
 
 ## License
 
