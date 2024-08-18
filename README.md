@@ -32,6 +32,12 @@ This repository contains the AI Ambassadors Project of Microsoft Learn Student A
 
 https://github.com/user-attachments/assets/d0e1601f-dccd-42a8-9f63-18964702114f
 
+## Presentation
+
+The presentation for the project can be found at: [Team DeepShield - Deepfake Analysis Presentation](https://stdntpartners-my.sharepoint.com/:p:/g/personal/saksham_kumar_studentambassadors_com/EbQveM3-pCVDtwFR2JevNJ0BP2wviEIPJQd5CHQK6RHJ2A?e=fYrmRQ).
+
+Access restricted to Microsoft Learn Student Ambassadors.
+
 ## Installation and Usage
 
 - Clone the repository using the following command:
