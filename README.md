@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors. The project is about DeepFake Image Detection. The project is divided into two parts:
+This repository contains the AI Ambassadors Project of Microsoft Learn Student Ambassadors. The project is about DeepFake Image Detection Model. The project is divided into two parts:
 
 ### Development of a DeepFake Image Detection Model
 
