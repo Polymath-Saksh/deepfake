@@ -12,10 +12,6 @@ This repository contains the AI Ambassadors Project of Microsoft Learn Student A
 
 - The model trained is then deployed onto Hugging Face Model Hub for public use. The model is available for use at: [DeepFake Image Detection Model](https://huggingface.co/sakshamkr1/deepfake_vit)
 
-### Development of a Web Application for DeepFake Image Detection
-
-- A Django based Web Application is developed for the detection of DeepFake Images. The Web Application uses the model deployed on Hugging Face Model Hub for the detection of DeepFake Images.
-
 ## Model Statistics
 
 - Achieved an accuracy of 97% on the Testing Set.
