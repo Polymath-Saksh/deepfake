@@ -56,8 +56,8 @@ Access restricted to Microsoft Learn Student Ambassadors.
 
 ## Contributors
 
+- [Rhythm Narang](https://github.com/rhythmnarang1)
 - [Saksham Kumar](https://github.com/Polymath-Saksh)
-- [Pranaya Dwivedi](https://github.com/dwpranaya)
 
 ## Acknowledgements
 
